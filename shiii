@@ -1,0 +1,103 @@
+#include <iostream>
+#include <stdio.h>
+#include <omp.h>
+#include <string>
+//// 1 задание.
+//int main()
+//{
+//	setlocale(LC_ALL, "Russian");
+//	printf("Последовательная область 1\n");
+//#pragma omp parallel
+//	{
+//
+//    printf("Параллельная область\n");
+//
+//
+//	}
+//	printf("Последовательная область 2\n");
+//
+//}
+
+// 2 задание.
+
+//int main()
+//{
+//	setlocale(LC_ALL, "Russian");
+//	int AllThreads;
+//
+//#pragma omp parallel 
+//	{
+//	    int ThreadId;
+//		ThreadId = omp_get_thread_num();
+//        printf("Порядковый номер нити: %d\n",ThreadId);
+//		AllThreads = omp_get_num_threads();
+//	}
+//	printf("Число нитей: %d\n",AllThreads);
+//	std::system("pause");
+//}
+
+
+
+// 3-e задание
+//int main()
+//{
+//	setlocale(LC_ALL, "Russian");
+//#pragma omp parallel
+//	{
+//    printf("Параллельная область 1\n");
+//	}
+//
+//#pragma omp parallel num_threads(3)
+//	{
+//    printf("Параллельная область 2\n");
+//	}
+//omp_set_num_threads (4);
+//#pragma omp parallel
+//	{
+//    printf("Параллельная область 3\n");
+//	}
+//}
+
+
+
+// 4-e задание
+//int main()
+//{
+//	setlocale(LC_ALL, "Russian");
+//	int AllThreads;
+//	omp_set_dynamic(1); 
+//    printf("Значение OMP_DYNAMIC: %d\n", omp_get_dynamic()); 
+//#pragma omp parallel num_threads(128)
+//   {
+//#pragma omp master
+//      {
+// printf("Параллельная область, %d нитей\n", omp_get_num_threads());
+//      }
+//    }
+//} 
+
+
+// 5-e задание
+//int main()
+//{
+//	setlocale(LC_ALL, "Russian");
+//	std::string option;
+//	printf("Введите parallel если хотите ввести программу в параллельный регион или serial \n");
+//	std::cin >> option;
+//	if(option == "parallel")
+//	{
+//		
+//		#pragma omp parallel num_threads(5)
+//	    {
+//
+//            printf("Параллельная область\n");
+//
+//
+//	    }
+//	}
+//	else if(option == "serial")
+//	{
+//	        printf("Последовательная область \n");
+//	}
+//
+//}
